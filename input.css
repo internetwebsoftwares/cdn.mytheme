@@ -1,0 +1,20 @@
+.my-input {
+  background-color: #fff;
+  border: none;
+  outline: none;
+  padding: 7px 16px;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+  border: 3px solid #e6e6e6;
+  border-radius: 4px;
+  width: 200px;
+}
+
+.my-input:focus {
+  border: 3px solid var(--primary);
+}
+
+.my-input-expand {
+  width: 100%;
+  display: block;
+}
