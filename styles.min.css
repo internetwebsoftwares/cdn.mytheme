@@ -1,0 +1,323 @@
+:root {
+  --primary-light-x: #e4eeff;
+  --primary-light: #448aff;
+  --primary: #2979ff;
+  --primary-dark: #2962ff;
+  --secondary-light-x: #ebe8e8;
+  --secondary-light: #607d8b;
+  --secondary: #546e7a;
+  --secondary-dark: #455a64;
+  --white: #fff;
+  --white-dark: #f2f2f2;
+  --dark-light-x: #dddddd;
+  --dark-light: #37474f;
+  --dark: #263238;
+  --dark-dark: #212121;
+  --warning-light-x: #fcf2d0;
+  --warning-light: #ffd740;
+  --warning: #ffc400;
+  --warning-dark: #ffab00;
+  --success-light-x: #d7fdeb;
+  --success-light: #69f0ae;
+  --success: #00e676;
+  --success-dark: #00c853;
+  --danger-light-x: #fde8e8;
+  --danger-light: #e53935;
+  --danger: #c62828;
+  --danger-dark: #b71c1c;
+  --indigo-light-x: #f8e7ff;
+  --indigo-light: #7b1fa2;
+  --indigo: #6a1b9a;
+  --indigo-dark: #4a148c;
+}
+.btn {
+  border: none;
+  padding: 8px 16px;
+  min-width: 80px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  background-color: var(--white-dark);
+}
+.btn-light {
+  background: linear-gradient(to bottom, var(--white), var(--white-dark));
+  color: var(--dark);
+  box-shadow: inset 0 0 0 1px #ccc;
+}
+.btn-light:hover {
+  background: linear-gradient(to bottom, var(--white-dark), var(--white));
+}
+.btn-primary {
+  background: linear-gradient(
+    to right bottom,
+    var(--primary-light),
+    var(--primary-dark)
+  );
+  color: var(--white);
+}
+.btn-primary:hover {
+  background: linear-gradient(
+    to right bottom,
+    var(--primary-dark),
+    var(--primary-light)
+  );
+}
+.btn-secondary {
+  background: linear-gradient(
+    to right bottom,
+    var(--secondary-light),
+    var(--secondary-dark)
+  );
+  color: var(--white);
+}
+.btn-secondary:hover {
+  background: linear-gradient(
+    to right bottom,
+    var(--secondary-dark),
+    var(--secondary-light)
+  );
+}
+.btn-warning {
+  background: linear-gradient(
+    to right bottom,
+    var(--warning-light),
+    var(--warning-dark)
+  );
+  color: var(--dark);
+}
+.btn-warning:hover {
+  background: linear-gradient(
+    to right bottom,
+    var(--warning-dark),
+    var(--warning-light)
+  );
+}
+.btn-success {
+  background: linear-gradient(
+    to right bottom,
+    var(--success),
+    var(--success-dark)
+  );
+  color: var(--white);
+}
+.btn-success:hover {
+  background: linear-gradient(
+    to right bottom,
+    var(--success-dark),
+    var(--success)
+  );
+}
+.btn-danger {
+  background: linear-gradient(
+    to right bottom,
+    var(--danger-light),
+    var(--danger-dark)
+  );
+  color: var(--white);
+}
+.btn-danger:hover {
+  background: linear-gradient(
+    to right bottom,
+    var(--danger-dark),
+    var(--danger-light)
+  );
+}
+.btn-dark {
+  background: linear-gradient(
+    to right bottom,
+    var(--dark-light),
+    var(--dark-dark)
+  );
+  color: var(--white);
+}
+.btn-dark:hover {
+  background: linear-gradient(
+    to right bottom,
+    var(--dark-dark),
+    var(--dark-light)
+  );
+}
+.btn-indigo {
+  background: linear-gradient(
+    to right bottom,
+    var(--indigo-light),
+    var(--indigo-dark)
+  );
+  color: var(--white);
+}
+.btn-indigo:hover {
+  background: linear-gradient(
+    to right bottom,
+    var(--indigo-dark),
+    var(--indigo-light)
+  );
+}
+.btn-outline-primary {
+  background-color: transparent;
+  color: var(--primary);
+  box-shadow: inset 0 0 0 1.5px var(--primary);
+  font-weight: 700;
+}
+.btn-outline-primary:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+.btn-outline-secondary {
+  background-color: transparent;
+  color: var(--secondary);
+  box-shadow: inset 0 0 0 1.5px var(--secondary);
+  font-weight: 700;
+}
+.btn-outline-secondary:hover {
+  background-color: var(--secondary);
+  color: var(--white);
+}
+.btn-outline-warning {
+  background-color: transparent;
+  color: var(--warning);
+  box-shadow: inset 0 0 0 1.5px var(--warning);
+  font-weight: 700;
+}
+.btn-outline-warning:hover {
+  background-color: var(--warning);
+  color: var(--dark);
+}
+.btn-outline-success {
+  background-color: transparent;
+  color: var(--success-dark);
+  box-shadow: inset 0 0 0 1.5px var(--success-dark);
+  font-weight: 700;
+}
+.btn-outline-success:hover {
+  background-color: var(--success-dark);
+  color: var(--white);
+}
+.btn-outline-danger {
+  background-color: transparent;
+  color: var(--danger);
+  box-shadow: inset 0 0 0 1.5px var(--danger);
+  font-weight: 700;
+}
+.btn-outline-danger:hover {
+  background-color: var(--danger);
+  color: var(--white);
+}
+.btn-outline-dark {
+  background-color: transparent;
+  color: var(--dark);
+  box-shadow: inset 0 0 0 1.5px var(--dark);
+  font-weight: 700;
+}
+.btn-outline-dark:hover {
+  background-color: var(--dark);
+  color: var(--white);
+}
+.btn-outline-indigo {
+  background-color: transparent;
+  color: var(--indigo);
+  box-shadow: inset 0 0 0 1.5px var(--indigo);
+  font-weight: 700;
+}
+.btn-outline-indigo:hover {
+  background-color: var(--indigo);
+  color: var(--white);
+}
+.btn-light-primary {
+  background-color: transparent;
+  color: var(--primary);
+  font-weight: 700;
+}
+.btn-light-primary:hover {
+  background-color: var(--primary-light-x);
+  color: var(--primary);
+  font-weight: 700;
+}
+.btn-light-secondary {
+  background-color: transparent;
+  color: var(--secondary);
+  font-weight: 700;
+}
+.btn-light-secondary:hover {
+  background-color: var(--secondary-light-x);
+  color: var(--secondary);
+  font-weight: 700;
+}
+.btn-light-warning {
+  background-color: transparent;
+  color: var(--warning);
+  font-weight: 700;
+}
+.btn-light-warning:hover {
+  background-color: var(--warning-light-x);
+  color: var(--warning);
+  font-weight: 700;
+}
+.btn-light-dark {
+  background-color: transparent;
+  color: var(--dark);
+  font-weight: 700;
+}
+.btn-light-dark:hover {
+  background-color: var(--dark-light-x);
+  color: var(--dark);
+  font-weight: 700;
+}
+.btn-light-success {
+  background-color: transparent;
+  color: var(--success);
+  font-weight: 700;
+}
+.btn-light-success:hover {
+  background-color: var(--success-light-x);
+  font-weight: 700;
+}
+.btn-light-danger {
+  background-color: transparent;
+  color: var(--danger);
+  font-weight: 700;
+}
+.btn-light-danger:hover {
+  background-color: var(--danger-light-x);
+  font-weight: 700;
+}
+.btn-light-indigo {
+  background-color: transparent;
+  color: var(--indigo);
+  font-weight: 700;
+}
+.btn-light-indigo:hover {
+  background-color: var(--indigo-light-x);
+  font-weight: 700;
+}
+.btn-block {
+  width: 100%;
+  padding: 10px 20px;
+  display: block;
+}
+.btn-lg {
+  min-width: 100px;
+  min-height: 40px;
+}
+.btn-sm {
+  width: 70px;
+  min-height: 30px;
+  font-size: 0.7rem;
+}
+.my-input {
+  background-color: #fff;
+  border: none;
+  outline: 0;
+  padding: 7px 16px;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+  border: 3px solid #e6e6e6;
+  border-radius: 4px;
+  width: 200px;
+}
+.my-input:focus {
+  border: 3px solid var(--primary);
+}
+.my-input-expand {
+  width: 100%;
+  display: block;
+}
