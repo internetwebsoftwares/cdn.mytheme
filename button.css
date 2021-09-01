@@ -35,141 +35,146 @@
 /* Button base */
 .btn {
   border: none;
-  padding: 8px 16px;
+  padding: 10px 16px;
   min-width: 80px;
   border-radius: 4px;
   cursor: pointer;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   background-color: var(--white-dark);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 /* Regular button classes */
 .btn-light {
-  background: linear-gradient(to bottom, var(--white), var(--white-dark));
+  background: linear-gradient(
+    to bottom,
+    var(--white) 50%,
+    var(--white-dark) 50%
+  );
   color: var(--dark);
   box-shadow: inset 0 0 0 1px #ccc;
 }
 
 .btn-light:hover {
-  background: linear-gradient(to bottom, var(--white-dark), var(--white));
+  background: linear-gradient(
+    to bottom,
+    var(--white-dark) 50%,
+    var(--white) 50%
+  );
 }
 
 .btn-primary {
   background: linear-gradient(
-    to right bottom,
-    var(--primary-light),
-    var(--primary-dark)
+    to bottom,
+    var(--primary) 50%,
+    var(--primary-dark) 50%
   );
   color: var(--white);
 }
 
 .btn-primary:hover {
   background: linear-gradient(
-    to right bottom,
-    var(--primary-dark),
-    var(--primary-light)
+    to bottom,
+    var(--primary-dark) 50%,
+    var(--primary) 50%
   );
 }
 
 .btn-secondary {
   background: linear-gradient(
-    to right bottom,
-    var(--secondary-light),
-    var(--secondary-dark)
+    to bottom,
+    var(--secondary) 50%,
+    var(--secondary-dark) 50%
   );
   color: var(--white);
 }
 
 .btn-secondary:hover {
   background: linear-gradient(
-    to right bottom,
-    var(--secondary-dark),
-    var(--secondary-light)
+    to bottom,
+    var(--secondary-dark) 50%,
+    var(--secondary) 50%
   );
 }
 
 .btn-warning {
   background: linear-gradient(
-    to right bottom,
-    var(--warning-light),
-    var(--warning-dark)
+    to bottom,
+    var(--warning) 50%,
+    var(--warning-dark) 50%
   );
   color: var(--dark);
 }
 
 .btn-warning:hover {
   background: linear-gradient(
-    to right bottom,
-    var(--warning-dark),
-    var(--warning-light)
+    to bottom,
+    var(--warning-dark) 50%,
+    var(--warning) 50%
   );
 }
 
 .btn-success {
   background: linear-gradient(
-    to right bottom,
-    var(--success),
-    var(--success-dark)
+    to bottom,
+    var(--success) 50%,
+    var(--success-dark) 50%
   );
   color: var(--white);
 }
 
 .btn-success:hover {
   background: linear-gradient(
-    to right bottom,
-    var(--success-dark),
-    var(--success)
+    to bottom,
+    var(--success-dark) 50%,
+    var(--success) 50%
   );
 }
 
 .btn-danger {
   background: linear-gradient(
-    to right bottom,
-    var(--danger-light),
-    var(--danger-dark)
+    to bottom,
+    var(--danger) 50%,
+    var(--danger-dark) 50%
   );
   color: var(--white);
 }
 
 .btn-danger:hover {
   background: linear-gradient(
-    to right bottom,
-    var(--danger-dark),
-    var(--danger-light)
+    to bottom,
+    var(--danger-dark) 50%,
+    var(--danger) 50%
   );
 }
 
 .btn-dark {
-  background: linear-gradient(
-    to right bottom,
-    var(--dark-light),
-    var(--dark-dark)
-  );
+  background: linear-gradient(to bottom, var(--dark) 50%, var(--dark-dark) 50%);
   color: var(--white);
 }
 
 .btn-dark:hover {
-  background: linear-gradient(
-    to right bottom,
-    var(--dark-dark),
-    var(--dark-light)
-  );
+  background: linear-gradient(to bottom, var(--dark-dark) 50%, var(--dark) 50%);
 }
 
 .btn-indigo {
   background: linear-gradient(
-    to right bottom,
-    var(--indigo-light),
-    var(--indigo-dark)
+    to bottom,
+    var(--indigo) 50%,
+    var(--indigo-dark) 50%
   );
   color: var(--white);
 }
 
 .btn-indigo:hover {
   background: linear-gradient(
-    to right bottom,
-    var(--indigo-dark),
-    var(--indigo-light)
+    to bottom,
+    var(--indigo-dark) 50%,
+    var(--indigo) 50%
   );
 }
 
@@ -344,17 +349,17 @@
 /* Button size classes */
 .btn-block {
   width: 100%;
-  padding: 10px 20px;
+  padding: 10px 0px;
   display: block;
 }
 
 .btn-lg {
-  min-width: 100px;
-  min-height: 40px;
+  padding: 14px 22px;
+  font-size: 1rem;
 }
 
 .btn-sm {
-  width: 70px;
+  padding: 8px 16px;
   min-height: 30px;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
