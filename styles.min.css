@@ -580,3 +580,24 @@ hr {
 .py-5 {
   padding: 5rem 0;
 }
+.bg-primary {
+  background-color: var(--primary);
+}
+.bg-warning {
+  background-color: var(--warning);
+}
+.bg-success {
+  background-color: var(--success);
+}
+.bg-danger {
+  background-color: var(--danger-light);
+}
+.bg-dark {
+  background-color: var(--dark);
+}
+.bg-light {
+  background-color: var(--light-dark);
+}
+.bg-indigo {
+  background-color: var(--indigo);
+}
